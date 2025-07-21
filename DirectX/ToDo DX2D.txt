@@ -1,0 +1,100 @@
+1. 장치 초기화
+
+2. 삼각형 렌더링
+
+3. GameObject 구조 설계
+
+4. Level 구조 설계
+
+5. Texture 에셋 설계 및 오브젝트에 적용
+  - DirectxTex 라이브러리 링크 - Github DirectxTex 라이브러리 다운로드 및 빌드
+  - Texture 클래스 설계
+  - SamplerState 제작
+  - UV 좌표계 설명
+
+6. Material 재질 에셋타입 추가
+
+
+7. RasterizerState 
+
+
+8. BlendState
+  - AlphaBlend
+
+9. DepthStencilState
+
+10. 렌더매니저 구현
+  - 렌더 전용 담당자
+  - Level 안에있는 Camera 를 등록받아서, 카메라를 기준으로 렌더링을 한다.
+  - Camera 는 원하는 Layer 만 찍을 수 있다.
+  - Camera 가 찍고자 하는 Layer 에 소속되어있는 모든 오브젝트들을 가져와서 Rendering 이 가능하다면, 재질의 Domain 에 따라 분류한다.
+
+11. 새로운 타입의 메쉬 추가
+  - CircleMesh (원형 타입)  
+
+12. DebugRendering
+  - 디버그 용도로 화면에 그림을 그리는 기능
+  - Collider2D 컴포넌트의 위치를 시각적으로 표현
+
+13. 계층구조 설계
+  - GameObject 간의 부모자식 관계 연결
+
+14. Collider2D 컴포넌트 설계
+
+15. Sprite 에셋 설계
+  - 저장/ 불러오기
+
+16. SpriteRender 컴포넌트 설계
+  - SpriteShader 제작
+
+17. Sprite 의 묶음으로 구성된 Flipbook 에셋 설계
+  - 저장/ 불러오기
+
+18. Flipbook 을 재생할 수 있는 FlipbookComponent 설계
+  - 쉐이더는 SpriteShader 를 공유해서 사용, 재질을 별도
+
+19. 오브젝트 생성 및 삭제처리 (TaskMgr)
+  - CreateObject, DeletObject 이벤트 처리
+
+20. GameObject 복사 점검
+  - GameObject 를 복사한 객체가 원본과 완전히 동일한 기능을  수행할 수 있는가에 대한 점검
+
+21. Prefab 에셋 설계
+ - 완성된 하나의 GameObject 를 에셋으로 취급
+ - 완성된 오브젝트의 복사본 객체를 만들어서 Level 에 스폰
+ - Prototype 패턴
+
+
+22. ImGui 를 활용한 게임 에디터 기능 설계
+
+
+PostProcess 후처리
+
+
+TileRender 컴포넌트
+  - StructuredBuffer 구조화 버퍼
+
+ParticleRender 컴포넌트
+ - ComputeShader
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Client.h">
+      <Filter>0. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>0. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>0. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>0. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="ImGuiMgr.h">
+      <Filter>Mamager\ImGuiMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Inspector.h">
+      <Filter>EUI\1. Inspector</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformUI.h">
+      <Filter>EUI\1. Inspector\ComponentUI\1. TransformUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentUI.h">
+      <Filter>EUI\1. Inspector\ComponentUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraUI.h">
+      <Filter>EUI\1. Inspector\ComponentUI\2. CameraUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider2DUI.h">
+      <Filter>EUI\1. Inspector\ComponentUI\3. Collider2D</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Client.ico">
+      <Filter>0. Default</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>0. Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="0. Default">
+      <UniqueIdentifier>{3a4bae40-e168-4323-b5c0-d5e87668b7a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{0843974a-fa01-4c09-986f-be4b03b0c83f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mamager">
+      <UniqueIdentifier>{e955d7be-20c7-4868-825c-27f3f730e531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mamager\ImGuiMgr">
+      <UniqueIdentifier>{aca02f13-d912-453a-bb60-c4c4edd8a1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI">
+      <UniqueIdentifier>{ed05b363-450d-41a8-983d-e4f43cbf41e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector">
+      <UniqueIdentifier>{bb80a036-9e27-498b-b27b-452c512f3ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\2. Content">
+      <UniqueIdentifier>{d4a96bb3-cb12-41b0-aaab-10d2b60cf333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector\ComponentUI">
+      <UniqueIdentifier>{c514fb45-c94f-4c4f-95af-5ef408c6c949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector\ComponentUI\2. CameraUI">
+      <UniqueIdentifier>{74049aba-f69a-4bcd-b5ac-985d1c27315b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector\ComponentUI\1. TransformUI">
+      <UniqueIdentifier>{b6c47976-e93f-4234-97b4-463014debcd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector\ComponentUI\3. Collider2D">
+      <UniqueIdentifier>{4de48e3b-f661-4404-a984-720a54aa6148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector\ComponentUI\4. Collider3D">
+      <UniqueIdentifier>{cd46c26d-7e79-4052-9340-08525703fbbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector\ComponentUI\RenderComponentUI">
+      <UniqueIdentifier>{d1791810-0353-4e70-b907-8433a1c90b9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector\ComponentUI\RenderComponentUI\1. MeshRenderUI">
+      <UniqueIdentifier>{a22ce007-3ef2-4e7e-b287-fd31a7238921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector\ComponentUI\RenderComponentUI\2. SpriteRenderUI">
+      <UniqueIdentifier>{938553e6-08ce-4237-bd4a-fc804c7ff15d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EUI\1. Inspector\ComponentUI\RenderComponentUI\3. FlipbookRenderUI">
+      <UniqueIdentifier>{731e6616-f110-470a-8934-356eb6312062}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>0. Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="ImGuiMgr.cpp">
+      <Filter>Mamager\ImGuiMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Inspector.cpp">
+      <Filter>EUI\1. Inspector</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformUI.cpp">
+      <Filter>EUI\1. Inspector\ComponentUI\1. TransformUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentUI.cpp">
+      <Filter>EUI\1. Inspector\ComponentUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraUI.cpp">
+      <Filter>EUI\1. Inspector\ComponentUI\2. CameraUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider2DUI.cpp">
+      <Filter>EUI\1. Inspector\ComponentUI\3. Collider2D</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

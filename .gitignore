@@ -1,0 +1,42 @@
+############################
+# Build 결과물 무시
+############################
+Debug/
+Release/
+x64/
+x86/
+*.obj
+*.pdb
+*.lib
+*.dll
+*.exe
+*.ilk
+*.idb
+*.tlog
+*.log
+*.sdf
+*.opensdf
+*.ipch
+
+############################
+# Visual Studio 관련
+############################
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.cachefile
+
+############################
+# 기타 무시
+############################
+*.tmp
+*.bak
+*.old
+*.log
+*.pch
+Thumbs.db
+.DS_Store
