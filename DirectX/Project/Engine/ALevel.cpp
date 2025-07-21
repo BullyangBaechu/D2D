@@ -66,8 +66,10 @@ void ALevel::Deregister()
 
 GameObject* ALevel::FindObjectByName(const wstring& _Name)
 {
+	// 이름 검색을 위한 순차 탐색
 	for (UINT i = 0; i < MAX_LAYER; ++i)
 	{
+		// 복사 방지를 위해 const & (읽기 전용)
 		const vector<Ptr<GameObject>>& vecObjects = m_Layer[i]->GetObjects();
 
 		for (size_t j = 0; j < vecObjects.size(); ++j)

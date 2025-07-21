@@ -129,5 +129,5 @@ void LevelMgr::Progress()
 
 GameObject* LevelMgr::FindObjectByName(const wstring& _Name)
 {
-	return m_CurLevel->FindObjectByName(_Name);
+	return m_CurLevel->FindObjectByName(_Name); 
 }

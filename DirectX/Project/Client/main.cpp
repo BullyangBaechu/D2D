@@ -65,7 +65,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     }
 
 
-    // ImGui 부분 초기화
+    // ImGui 부분 초기화 (전용 Mgr 만들어서 코드 간략화)
     ImGuiMgr::GetInst()->Init();
     
 
@@ -95,6 +95,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
             ImGuiMgr::GetInst()->Progress();
 
+            // ImGui로 사용할 UI들도 RenderTarget으로서 present 해줘야하므로 호출
+            // 여기서 안 해주면 ImGui로 사용할 UI는 rendertarget으로 잡히기만 할 뿐 present는 안 되어서 화면에 안 보임 (Engine 쪽 렌더 타겟만 present됨)
             Device::GetInst()->Present();
         }       
     }
@@ -103,6 +105,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 }
 
 
+// ImGui sample에서 제공되는 함수 갖고 오기
 
 LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 

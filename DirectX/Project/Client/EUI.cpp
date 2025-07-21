@@ -36,6 +36,7 @@ void EUI::Render()
 	{
 		ImGui::Begin(m_Name.c_str(), &m_Active);
 
+		// 오버라이딩 안 되는 Render() 호출 후 begin과 end 사이에서 자식들이 오버라이딩 하는 Render_UI() 호출하기
 		Render_UI();
 
 		for (size_t i = 0; i < m_vecChildUI.size(); ++i)

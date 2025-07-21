@@ -46,6 +46,8 @@ void RenderMgr::Init()
 
 void RenderMgr::Progress()
 {	
+	
+	// 실행 시 계속 타겟을 설정해줘야, 타겟이 변동되었을 때 이전 타겟이 사라지는 현상을 막을 수 있음
 	Device::GetInst()->TargetBinding(); // OM(Output Merge) 타겟 바인딩
 	Device::GetInst()->ClearTarget(Vec4(0.4f, 0.4f, 0.4f, 1.f)); // Clear Target
 	

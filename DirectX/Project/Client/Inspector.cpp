@@ -43,7 +43,9 @@ void Inspector::Render_UI()
 	if (nullptr == m_TargetObject)
 		return;
 
+	//wstring을 1바이트로 변환하기 (string으로)
 	string ObjectName = string(m_TargetObject->GetName().begin(), m_TargetObject->GetName().end());
+
 	ImGui::Text("Name");
 	ImGui::SameLine(100);
 	ImGui::InputText("##InputText", (char*)ObjectName.c_str(), ObjectName.length() + 1, ImGuiInputTextFlags_ReadOnly);

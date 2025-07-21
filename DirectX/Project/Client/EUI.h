@@ -1,5 +1,5 @@
 #pragma once
-
+// 에디터 용 UI
 #include "ImGui/imgui.h"
 
 class EUI
@@ -32,6 +32,7 @@ public:
 	virtual void Tick();
 	virtual void Render();
 
+	// 자식 UI들이 무조건 오버라이딩해서 직접 고유성을 갖게 하기 위해 순수 가상 함수로 tick, render를 만들기
 	virtual void Tick_UI() = 0;
 	virtual void Render_UI() = 0;
 

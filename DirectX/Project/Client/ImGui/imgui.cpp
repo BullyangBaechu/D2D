@@ -1,4 +1,6 @@
+// 프로젝트 경로를 포함 디렉토리에 설정하여서 상위 폴더에 있는 pch.h를 상대적 경로로 전처리기 사용 가능해짐
 #include "pch.h"
+
 // dear imgui, v1.91.9 WIP
 // (main code and documentation)
 

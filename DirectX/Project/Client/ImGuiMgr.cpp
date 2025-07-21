@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "ImGuiMgr.h"
 
+// external 폴더 쪽에 있는 Engine 폴더 안 에 있는 헤더 파일 갖고오기
 #include <Engine/Engine.h>
 #include <Engine/Device.h>
 #include <Engine/KeyMgr.h>
@@ -63,7 +64,9 @@ void ImGuiMgr::Init()
     }
 
     // Setup Platform/Renderer backends
+    // imgui를 사용하기 위한 윈도우 핸들 값을 넣어줘야함
     ImGui_ImplWin32_Init(Engine::GetInst()->GetMainWnd());
+    // 기본적으로 ImGui는 comPtr 안 써서 .get()으로 호출해야함
     ImGui_ImplDX11_Init(DEVICE.Get(), CONTEXT.Get());
 
     // Load Fonts
@@ -121,6 +124,21 @@ void ImGuiMgr::Render()
     // RenderUpdate
     // 렌더링할 UI 의 존재를 확인한다(Begin -> End 가 한세트)
     // ==================
+    
+
+    // 예시로 만들어보기
+    static bool bOpen = true;
+
+    // ui 창 On/Off 작동 방식 예시
+    if (bOpen)
+    {
+        ImGui::Begin("Test Window", &bOpen);
+        ImGui::Button("Sample Button");
+        ImGui::End();
+    }
+   
+     
+    
     // Demo Window Widget
     if(m_ShowDemo)
         ImGui::ShowDemoWindow(&m_ShowDemo);
@@ -140,6 +158,7 @@ void ImGuiMgr::Render()
     ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
 
     // Update and Render additional Platform Windows
+    // 즉, ImGui 창이 기존 윈도우 창 밖으로 벗어나면 새로운 윈도우, 렌더타겟, 목적지로 설정된다는 뜻
     if (ImGui::GetIO().ConfigFlags & ImGuiConfigFlags_ViewportsEnable)
     {
         ImGui::UpdatePlatformWindows();
