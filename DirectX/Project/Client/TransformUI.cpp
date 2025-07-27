@@ -30,6 +30,7 @@ void TransformUI::Render_UI()
 
 	ImGui::Text("Position");
 	ImGui::SameLine(100);
+	// vPos로 넣어도 되는 이유 : ComPtr의 컨버젼으로 Vec3를 그냥 넣어도됨
 	if (ImGui::DragFloat3("##Position", vPos, 1.f))
 	{
 		pTransform->SetRelativePos(vPos);
@@ -52,6 +53,7 @@ void TransformUI::Render_UI()
 	bool bIndependentScale = pTransform->GetIndependentScale();
 	ImGui::Text("Independent Scale");
 	ImGui::SameLine(140);
+	// 이런 bool 옵션은 checkbox로 쓰는게 좋다
 	if (ImGui::Checkbox("##CheckBox", &bIndependentScale))
 	{
 		pTransform->SetIndependentScale(bIndependentScale);

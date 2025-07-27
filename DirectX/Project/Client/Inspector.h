@@ -10,7 +10,7 @@ class Inspector :
 {
 private:
     Ptr<GameObject>     m_TargetObject;
-    ComponentUI*        m_arrComUI[(UINT)COMPONENT_TYPE::END];
+    ComponentUI*        m_arrComUI[(UINT)COMPONENT_TYPE::END];          // 인스펙터가 대응할 Component들의 집합(추후 새로 생길 Component에도 능동적으로 대응 가능한 다형성 구조)
 
 
 public:

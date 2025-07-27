@@ -51,6 +51,7 @@ void EUI::Render()
 	}
 
 	// 자식 UI 라면
+	// ImGui에서 제공하는 BeginChild, EndChild()를 써야함
 	else
 	{
 		ImGui::BeginChild(m_Name.c_str(), m_AsChildSize);

@@ -47,6 +47,7 @@ void Inspector::Render_UI()
 	string ObjectName = string(m_TargetObject->GetName().begin(), m_TargetObject->GetName().end());
 
 	ImGui::Text("Name");
+	// 같은 줄에 추가하고자 sameline()
 	ImGui::SameLine(100);
 	ImGui::InputText("##InputText", (char*)ObjectName.c_str(), ObjectName.length() + 1, ImGuiInputTextFlags_ReadOnly);
 }
